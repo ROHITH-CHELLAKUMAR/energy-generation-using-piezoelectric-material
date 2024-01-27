@@ -1,0 +1,90 @@
+CALCULATION FOR CYCLE TYRE
+
+needed Information:-
+    --NUMBER OF MODULE IN EACH WHEEL:-  
+         circumference of a standard cycle wheel=559Xpi mm
+         Diameter of a single piezo cell=27mm Thickness=.33mm
+         Number of cell in each module=4
+         diameter of each module=108mm
+         gap between each module=2mm
+
+         =35(approx)
+    
+
+
+    --Contact path=load on the wheel/air pressure in the tire
+
+
+                 load on the wheel=weight of tire X 9.81=1.3X9.81=12.753
+                 air pressure of the tire=0.620528
+
+    --CONTACT PATH=12.753/0.620528=20.5518
+      So based on the contact path....there will be 2 module in contact area
+
+
+
+
+    --Mechanical stress in each module
+         force on each module/area of application of the load
+          =1.3X9.81X4/(2XpiX0.28^2)
+
+          =103.5562N/m^2
+
+
+   --Open Circuit Voltage(OCV)=g33XsigmaXt
+           g33(piezoelectric voltage constant)=57.4X10^-3 m^2/N
+           sigma=mechanical stress=103.5562
+           thickness of module=0.33mm
+           OCV=57.4X10^-3X103.5562X0.33
+       
+          OCV=2V(approx)
+
+
+         VOLTAGE per wheel=2X15=30V
+         TOTAL VOLTAGE(both wheels)=2X30=60V(per rotation for 1 hour)
+          
+----------------------------------------------------------------------------
+
+  --charge density=d33Xsigma=350X10^-12X103.5562
+                  =3.6244 e-8
+  
+
+  --charge on each module=CDXpiX(0.014)^2
+                          =2.231 e-11
+
+
+
+------------------------------------------------------------------
+
+  --power output=vXI
+                =2X2.231 e-11
+                =7.2448e-8
+
+
+  --Assume the cycle speed is 20km/h(8.3333m/s)
+  --Number of wheel rotation per second=velocity/radius of wheelX2Xpi
+                                       =8.333/3.5X2Xpi
+                                       =14.9593 rotation/second
+                                       =15(aprrox)
+
+
+  --Power output per wheel per second=14.9593X7.24e-8=1.0830e-6
+                                      =30V(for voltage)
+
+
+  --If the cycle runs for one hour,the energy stored=1.0830e-6X3600=0.0038989J
+                                                    =30X3600=
+
+  --energy from two wheel=2X0.003898=0.007797J
+
+                                        7.797 X10^-3J
+                 
+          
+
+
+
+
+
+
+  
+       
